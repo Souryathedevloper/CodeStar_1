@@ -1,8 +1,14 @@
+
 .login-container {
     text-align: center;
     padding: 50px;
     background: #e3e3e3;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 1s ease-in-out;
 }
 
 input, select {
@@ -11,6 +17,7 @@ input, select {
     padding: 8px;
     width: 80%;
     max-width: 300px;
+    animation: slideIn 0.5s ease-in-out;
 }
 
 button {
@@ -19,4 +26,27 @@ button {
     color: white;
     border: none;
     cursor: pointer;
+    animation: pulse 1.5s infinite;
+}
+
+.register-button {
+    margin-top: 10px;
+    background: #007bff;
+    animation: slideIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
 }
