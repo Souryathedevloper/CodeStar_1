@@ -1,11 +1,118 @@
-/* src/components/LandingPage.css */
-.landing-container {
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+  }
+  
+  /* Landing Page Container */
+  .landing-container {
+    background: url("../assets/landing-bg.jpg") no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  /* Navbar */
+  .navbar {
+    width: 100%;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    z-index: 100;
+  }
+  
+  .logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .signin-btn {
+    padding: 10px 20px;
+    color: white;
+    background: #ff6600;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .signin-btn:hover {
+    background: #cc5200;
+  }
+  
+  /* Hero Section */
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    color: white;
     text-align: center;
+  }
+  
+  .hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+  }
+  
+  .hero p {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .cta-btn {
+    background: #ff6600;
+    padding: 12px 25px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .cta-btn:hover {
+    background: #cc5200;
+  }
+  
+  /* Features Section */
+  .features {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    background: rgba(0, 0, 0, 0.7);
     padding: 50px;
-    background: #f4f4f4;
-    min-height: 100vh;
-}
-
-h1 {
-    color: #333;
-}
+    width: 100%;
+  }
+  
+  .feature {
+    text-align: center;
+    color: white;
+    width: 30%;
+  }
+  
+  .feature h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  
+  /* Footer */
+  .footer {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    text-align: center;
+    color: white;
+    width: 100%;
+  }
+  
